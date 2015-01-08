@@ -1,0 +1,11 @@
+// Please try to maintain the same code style as outlined here:
+// https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
+
+// Global
+$grid-columns:                    12 !default;
+$grid-gutter:                     30px !default;
+
+$grid-breakpoint-min-map:         map-merge(("xs": 0), $screen-min-map) !default;
+
+$grid-container-base-max-width:   $screen-lg-max !default;
+

@@ -1,0 +1,39 @@
+// Please try to maintain the same code style as outlined here:
+// https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
+
+@import 'grid-vars';
+@import 'grid-functions';
+@import 'grid-mixins';
+
+
+// Container
+// ---------
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $grid-container-base-max-width;
+  padding-left: ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+}
+
+// Container sizes
+@each $suffix, $resolution in $screen-max-map {
+  .container-#{$suffix} {
+    max-width: $resolution;
+  }
+}
+
+
+// Rows
+// ----
+.row {
+  margin-left: -($grid-gutter / 2);
+  margin-right: -($grid-gutter / 2);
+
+  @include clearfix;
+}
+
+
+// Columns
+// -------
+@include make-columns();

@@ -1,0 +1,46 @@
+// Please try to maintain the same code style as outlined here:
+// https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
+
+@mixin make-column($breakpoint,  $resolution,  $width,  $columns: $grid-columns,  $gutter: $grid-gutter,  $name: "col",  $suffix: null) {
+  @if $suffix == true {
+    $suffix: "-of-" + $columns;
+  }
+  .#{$name}-#{$breakpoint}-#{$width}#{$suffix} {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: ($gutter / 2);
+    padding-right: ($gutter / 2);
+    width: percentage($width / $columns);
+  }
+
+  .#{$name}-#{$breakpoint}-offset-#{$width}#{$suffix} {
+    margin-left: percentage($width / $columns);
+  }
+
+  .#{$name}-#{$breakpoint}-push-#{$width}#{$suffix} {
+    left: percentage($width / $columns);
+  }
+
+  .#{$name}-#{$breakpoint}-pull-#{$width}#{$suffix} {
+    right: percentage($width / $columns);
+  }
+}
+
+@mixin make-columns($columns: $grid-columns,  $gutter: $grid-gutter,  $name: "col",  $suffix: null) {
+  @each $breakpoint, $resolution in $grid-breakpoint-min-map {
+    @include mq($resolution) {
+      @for $width from 1 through $columns {
+        @include make-column(
+          $breakpoint: $breakpoint,
+          $resolution: $resolution,
+          $width: $width,
+          $columns: $columns,
+          $gutter: $gutter,
+          $name: $name,
+          $suffix: $suffix
+        );
+      }
+    }
+  }
+}

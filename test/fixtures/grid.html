@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../bower_components/lintel/dist/lintel.css">
+    <link rel="stylesheet" href="../../dist/grid.css">
+
+    <style>
+      z {
+        background-color: #ededed;
+        border-radius: 4px;
+        display: block;
+        padding: 4px;
+      }
+
+      .row {
+        margin-bottom: 10px;
+      }
+
+      [class^="col-"] {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="pad">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-2xl-6 col-3xl-5 col-max-4"><z>
+          <span class="visible-xs-max-block">xs-11</span>
+          <span class="visible-sm-block">sm-10</span>
+          <span class="visible-md-block">md-9</span>
+          <span class="visible-lg-block">lg-8</span>
+          <span class="visible-xl-block">xl-7</span>
+          <span class="visible-2xl-block">2xl-6</span>
+          <span class="visible-3xl-block">3xl-5</span>
+          <span class="visible-max-min-block">max-4</span>
+        </z></div>
+      </div>
+    </div>
+
+    <!-- OFFSET -->
+    <h1 class="text-center">offset</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4"><z>left</z></div>
+        <div class="col-xs-8"><z>right</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-4"><z>right</z></div>
+      </div>
+    </div>
+
+    <!-- PULL / PUSH -->
+    <h1 class="text-center">pull / push</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-push-4"><z>right</z></div>
+        <div class="col-xs-4 col-xs-pull-8"><z>left</z></div>
+      </div>
+    </div>
+
+    <!-- CONTAINER SIZES -->
+    <h1 class="text-center">container-*</h1>
+    <div class="container container-xs">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-xs</z></div>
+      </div>
+    </div>
+
+    <div class="container container-sm">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-sm</z></div>
+      </div>
+    </div>
+
+    <div class="container container-md">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-md</z></div>
+      </div>
+    </div>
+
+    <div class="container container-lg">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-lg</z></div>
+      </div>
+    </div>
+
+    <div class="container container-xl">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-xl</z></div>
+      </div>
+    </div>
+
+    <div class="container container-2xl">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-2xl</z></div>
+      </div>
+    </div>
+
+    <div class="container container-3xl">
+      <div class="row">
+        <div class="col-xs-12"><z>.container-3xl</z></div>
+      </div>
+    </div>
+
+    <!-- xs -->
+    <h1 class="text-center">xs</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1"><z>1</z></div>
+        <div class="col-xs-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2"><z>2</z></div>
+        <div class="col-xs-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"><z>3</z></div>
+        <div class="col-xs-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4"><z>4</z></div>
+        <div class="col-xs-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5"><z>5</z></div>
+        <div class="col-xs-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6"><z>6</z></div>
+        <div class="col-xs-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-7"><z>7</z></div>
+        <div class="col-xs-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8"><z>8</z></div>
+        <div class="col-xs-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9"><z>9</z></div>
+        <div class="col-xs-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10"><z>10</z></div>
+        <div class="col-xs-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-11"><z>11</z></div>
+        <div class="col-xs-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- sm -->
+    <h1 class="text-center">sm</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"><z>1</z></div>
+        <div class="col-sm-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"><z>2</z></div>
+        <div class="col-sm-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"><z>3</z></div>
+        <div class="col-sm-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"><z>4</z></div>
+        <div class="col-sm-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5"><z>5</z></div>
+        <div class="col-sm-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"><z>6</z></div>
+        <div class="col-sm-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-7"><z>7</z></div>
+        <div class="col-sm-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8"><z>8</z></div>
+        <div class="col-sm-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9"><z>9</z></div>
+        <div class="col-sm-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10"><z>10</z></div>
+        <div class="col-sm-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-11"><z>11</z></div>
+        <div class="col-sm-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- md -->
+    <h1 class="text-center">md</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"><z>1</z></div>
+        <div class="col-md-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"><z>2</z></div>
+        <div class="col-md-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><z>3</z></div>
+        <div class="col-md-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"><z>4</z></div>
+        <div class="col-md-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"><z>5</z></div>
+        <div class="col-md-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"><z>6</z></div>
+        <div class="col-md-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7"><z>7</z></div>
+        <div class="col-md-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8"><z>8</z></div>
+        <div class="col-md-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-9"><z>9</z></div>
+        <div class="col-md-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-10"><z>10</z></div>
+        <div class="col-md-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-11"><z>11</z></div>
+        <div class="col-md-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- lg -->
+    <h1 class="text-center">lg</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"><z>1</z></div>
+        <div class="col-lg-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"><z>2</z></div>
+        <div class="col-lg-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"><z>3</z></div>
+        <div class="col-lg-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4"><z>4</z></div>
+        <div class="col-lg-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5"><z>5</z></div>
+        <div class="col-lg-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6"><z>6</z></div>
+        <div class="col-lg-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7"><z>7</z></div>
+        <div class="col-lg-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8"><z>8</z></div>
+        <div class="col-lg-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9"><z>9</z></div>
+        <div class="col-lg-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10"><z>10</z></div>
+        <div class="col-lg-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11"><z>11</z></div>
+        <div class="col-lg-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- xl -->
+    <h1 class="text-center">xl</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-1"><z>1</z></div>
+        <div class="col-xl-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-2"><z>2</z></div>
+        <div class="col-xl-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3"><z>3</z></div>
+        <div class="col-xl-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4"><z>4</z></div>
+        <div class="col-xl-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-5"><z>5</z></div>
+        <div class="col-xl-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6"><z>6</z></div>
+        <div class="col-xl-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-7"><z>7</z></div>
+        <div class="col-xl-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8"><z>8</z></div>
+        <div class="col-xl-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-9"><z>9</z></div>
+        <div class="col-xl-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-10"><z>10</z></div>
+        <div class="col-xl-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-11"><z>11</z></div>
+        <div class="col-xl-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- 2xl -->
+    <h1 class="text-center">2xl</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-2xl-1"><z>1</z></div>
+        <div class="col-2xl-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-2"><z>2</z></div>
+        <div class="col-2xl-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-3"><z>3</z></div>
+        <div class="col-2xl-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-4"><z>4</z></div>
+        <div class="col-2xl-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-5"><z>5</z></div>
+        <div class="col-2xl-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-6"><z>6</z></div>
+        <div class="col-2xl-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-7"><z>7</z></div>
+        <div class="col-2xl-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-8"><z>8</z></div>
+        <div class="col-2xl-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-9"><z>9</z></div>
+        <div class="col-2xl-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-10"><z>10</z></div>
+        <div class="col-2xl-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-11"><z>11</z></div>
+        <div class="col-2xl-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-2xl-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- 3xl -->
+    <h1 class="text-center">3xl</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-3xl-1"><z>1</z></div>
+        <div class="col-3xl-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-2"><z>2</z></div>
+        <div class="col-3xl-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-3"><z>3</z></div>
+        <div class="col-3xl-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-4"><z>4</z></div>
+        <div class="col-3xl-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-5"><z>5</z></div>
+        <div class="col-3xl-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-6"><z>6</z></div>
+        <div class="col-3xl-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-7"><z>7</z></div>
+        <div class="col-3xl-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-8"><z>8</z></div>
+        <div class="col-3xl-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-9"><z>9</z></div>
+        <div class="col-3xl-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-10"><z>10</z></div>
+        <div class="col-3xl-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-11"><z>11</z></div>
+        <div class="col-3xl-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-3xl-12"><z>12</z></div>
+      </div>
+    </div>
+
+    <!-- max -->
+    <h1 class="text-center">max</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-max-1"><z>1</z></div>
+        <div class="col-max-11"><z>11</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-2"><z>2</z></div>
+        <div class="col-max-10"><z>10</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-3"><z>3</z></div>
+        <div class="col-max-9"><z>9</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-4"><z>4</z></div>
+        <div class="col-max-8"><z>8</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-5"><z>5</z></div>
+        <div class="col-max-7"><z>7</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-6"><z>6</z></div>
+        <div class="col-max-6"><z>6</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-7"><z>7</z></div>
+        <div class="col-max-5"><z>5</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-8"><z>8</z></div>
+        <div class="col-max-4"><z>4</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-9"><z>9</z></div>
+        <div class="col-max-3"><z>3</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-10"><z>10</z></div>
+        <div class="col-max-2"><z>2</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-11"><z>11</z></div>
+        <div class="col-max-1"><z>1</z></div>
+      </div>
+      <div class="row">
+        <div class="col-max-12"><z>12</z></div>
+      </div>
+    </div>
+
+  </body>
+</html>

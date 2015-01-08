@@ -1,0 +1,31 @@
+{
+  "name": "lintel-contrib-grid",
+  "version": "0.1.0",
+  "description": "Grid for lintel.",
+  "homepage": "https://github.com/lintelio/lintel-contrib-grid",
+  "repository": "https://github.com/lintelio/lintel-contrib-grid.git",
+  "keywords": [
+    "lintelmodule",
+    "lintel"
+  ],
+  "main": [
+    "sass/grid.sass",
+    "dist/grid.min.css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lintel": "~0.1.5"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "/.*",
+    "sass/lintel-core-loader.scss"
+  ],
+  "authors": [
+    {
+      "name": "Marius Craciunoiu",
+      "email": "",
+      "url": "mariusc23.com"
+    }
+  ]
+}
