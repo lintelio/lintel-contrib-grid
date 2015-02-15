@@ -1,6 +1,6 @@
 {
   "name": "lintel-contrib-grid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Grid for lintel.",
   "homepage": "https://github.com/lintelio/lintel-contrib-grid",
   "repository": "https://github.com/lintelio/lintel-contrib-grid.git",
@@ -9,7 +9,7 @@
     "lintel"
   ],
   "main": [
-    "sass/grid.sass",
+    "sass/grid.scss",
     "dist/grid.min.css"
   ],
   "license": "MIT",
