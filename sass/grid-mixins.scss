@@ -6,11 +6,7 @@
     $suffix: "-of-" + $columns;
   }
   .#{$name}-#{$breakpoint}-#{$width}#{$suffix} {
-    position: relative;
-    float: left;
-    min-height: 1px;
-    padding-left: ($gutter / 2);
-    padding-right: ($gutter / 2);
+    @extend %col;
     width: percentage($width / $columns);
   }
 
